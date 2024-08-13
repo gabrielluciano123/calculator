@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+
+@keyframes rainbow-background {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+
+        @keyframes rainbow-background-1 {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+@keyframes rainbow-background-2 {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+@keyframes rainbow-background-3 {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+@keyframes rainbow-background-4 {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+@keyframes rainbow-background-5 {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+@keyframes rainbow-background-6 {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+@keyframes rainbow-background-7 {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+@keyframes rainbow-background-8 {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+@keyframes rainbow-background-9 {
+    0% { background-color: red; }
+    14% { background-color: orange; }
+    28% { background-color: yellow; }
+    42% { background-color: green; }
+    57% { background-color: blue; }
+    71% { background-color: indigo; }
+    85% { background-color: violet; }
+    100% { background-color: red; }
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .calculator {
+            background-color: #000000;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            padding: 20px;
+        }
+
+        .display {
+            height: 50px;
+            background-color: #222;
+            color: #fff;
+            text-align: right;
+            padding: 15px;
+            font-size: 24px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            animation: rainbow-background 10s infinite;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .button {
+            background-color: #e0e0e0;
+            border: none;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: rainbow-background 3s infinite;
+        }
+
+.button:nth-child(1) {
+    animation: rainbow-background-1 2s infinite;
+}
+
+.button:nth-child(2) {
+    animation: rainbow-background-2 4s infinite;
+}
+
+.button:nth-child(3) {
+    animation: rainbow-background-3 5s infinite;
+}
+
+.button:nth-child(4) {
+    animation: rainbow-background-4 7s infinite;
+}
+.button:nth-child(5) {
+    animation: rainbow-background-5 3s infinite;
+}
+.button:nth-child(6) {
+    animation: rainbow-background-6 4s infinite;
+}
+.button:nth-child(7) {
+    animation: rainbow-background-7 1s infinite;
+}
+.button:nth-child(8) {
+    animation: rainbow-background-8 2.2s infinite;
+}
+.button:nth-child(9) {
+    animation: rainbow-background-9 10s infinite;
+}
+
+
+        .button.operator {
+            background-color: #ff9500;
+            color: #fff;
+        }
+
+        .button.equals {
+            background-color: #007aff;
+            color: #fff;
+            grid-column: span 2;
+        }
+
+        .button.clear {
+            background-color: #ff3b30;
+            color: #fff;
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">0</div> <!-- Este es el display de la calculadora -->
+        <div class="buttons">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button operator">/</button>
+
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button operator">*</button>
+
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button operator">-</button>
+
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="button equals">=</button>
+            <button class="button operator">+</button>
+
+            <button class="button clear">C</button>
+            <button class="button backspace">←</button>
+        </div>
+    </div>
+    <script src="calcu.js"></script>
+</body>
+</html>
